@@ -1,0 +1,326 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--fg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all var(--duration-normal) var(--ease);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(211, 170, 139, 0.1);
+}
+
+.navbar.scrolled {
+  background-color: rgba(11, 11, 11, 0.9);
+  box-shadow: var(--shadow-lg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-placeholder {
+  height: 80px;
+  width: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: var(--space-lg);
+}
+
+.navbar-right {
+  margin-right: var(--space-lg);
+}
+
+.navbar-logo {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: transform var(--duration-normal) var(--ease);
+}
+
+.navbar-logo:hover {
+  transform: scale(1.02);
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: var(--space-lg);
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  color: var(--fg);
+  text-decoration: none;
+  font-size: var(--text-base);
+  font-weight: 500;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-normal) var(--ease);
+  position: relative;
+}
+
+.navbar-menu a:hover {
+  color: var(--accent);
+  background: rgba(211, 170, 139, 0.1);
+}
+
+.navbar-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: all var(--duration-normal) var(--ease);
+  transform: translateX(-50%);
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--fg);
+  transition: color var(--duration-normal) var(--ease);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.dropdown-trigger:hover {
+  color: var(--accent);
+  background: rgba(211, 170, 139, 0.1);
+}
+
+.dropdown-trigger .dropdown-arrow {
+  font-size: var(--text-sm);
+  transition: transform var(--duration-normal) var(--ease);
+  margin-left: var(--space-xs);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--surface);
+  box-shadow: var(--shadow-xl);
+  padding: var(--space-sm) 0;
+  border-radius: var(--radius-md);
+  list-style: none;
+  z-index: 10001;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 200px;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--fg);
+  text-decoration: none;
+  transition: all var(--duration-normal) var(--ease);
+}
+
+.dropdown-menu a:hover {
+  color: var(--accent);
+  background: rgba(211, 170, 139, 0.1);
+}
+
+/* Burger Icon for Mobile */
+.burger-icon {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  margin-right: 20px;
+  z-index: 1001;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #1a3530; /* Match navbar background */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-menu li {
+  margin: 15px 0;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: #d3aa8b;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .navbar-menu {
+    position: absolute;
+    top: 80px; /* Adjust based on navbar height */
+    left: 0;
+    padding-left: 80px;
+    width: 100%;
+    background-color: transparent; /* Match navbar background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin-top: -20px;
+  }
+  /* Consistent black background when scrolling */
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.95); /* Match the main theme */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .navbar-left img {
+    display: flex;
+    align-items: center;
+    margin-left: 2px; /* Add margin to the left of the logo */
+    width: 150px;
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .navbar-menu li {
+    margin: 10px 0; /* Add spacing between menu items */
+    text-align: center; /* Center align menu items */
+  }
+
+  .navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-right: 30px;
+    margin-right: 20px;
+  }
+
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px; /* Adjust icon size */
+    color: white;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  /* Adjust logo */
+  .navbar-left img {
+    margin-left: -10px;
+    width: 300px;
+  }
+
+  /* Hide only the menu list, not the entire navbar-right container */
+  .navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Hide menu items inside navbar-right */
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    z-index: 1000;
+    border-top: 1px solid rgba(211, 170, 139, 0.2);
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  /* Burger Icon styling */
+  .burger-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001; /* Must be above navbar-menu */
+  }
+
+  /* Menu Items */
+  .navbar-menu li {
+    margin: 15px 0;
+    text-align: center;
+    margin-right: 70px;
+  }
+
+  .navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-menu a:hover {
+    color: #d3aa8b;
+  }
+
+  /* Dropdown inside mobile */
+  .dropdown-menu {
+    position: absolute;
+    background-color: transparent;
+    box-shadow: none;
+    padding-right: 0;
+    margin-top: -130px;
+    left: 220px;
+  }
+
+  .dropdown-menu li {
+    padding: 8px 0;
+  }
+}

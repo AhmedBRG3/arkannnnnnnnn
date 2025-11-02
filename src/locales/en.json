@@ -1,0 +1,388 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "production": "Production",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "badge": "Award-Winning Creative Solutions",
+      "titleLine1": "Transform Your Brand Into a",
+      "titleLine2": "Market Leader",
+      "subtitle": "Premium design and flawless production",
+      "description": "Join 500+ successful businesses who chose ARKAN AL-TAFAWUQ for exceptional creative solutions that drive real growth and measurable success.",
+      "ctaPrimary": "Get Your Free Consultation",
+      "ctaSecondary": "View Our Portfolio"
+    },
+    "stats": {
+      "projects": "Projects Delivered",
+      "years": "Years Experience",
+      "satisfaction": "Client Satisfaction"
+    },
+    "services": {
+      "subtitle": "Our Expertise",
+      "title": "Crafting Tomorrow's Solutions",
+      "description": "We deliver comprehensive solutions that transform ideas into market-leading realities through our integrated approach.",
+      "design": {
+        "title": "Design Excellence",
+        "description": "Transform your vision into award-winning designs that command attention and drive conversions. Our creative team delivers stunning visuals that make your brand unforgettable and impossible to ignore.",
+        "features": {
+          "brand": "Brand Identity",
+          "uiux": "UI/UX Design",
+          "visual": "Visual Strategy"
+        }
+      },
+      "production": {
+        "title": "Production Mastery",
+        "description": "Deliver perfection with our precision-driven production services. Using cutting-edge technology and industry-leading quality standards, we guarantee flawless execution that exceeds expectations every time.",
+        "features": {
+          "quality": "Quality Assurance",
+          "technical": "Technical Excellence",
+          "delivery": "Timely Delivery"
+        }
+      }
+    },
+    "aboutPreview": {
+      "subtitle": "About ARKAN",
+      "title": "Excellence Through Innovation",
+      "description": "At ARKAN, we are architects of possibility, crafting solutions that transcend conventional boundaries. Our multidisciplinary approach combines artistic vision with strategic thinking, delivering results that not only meet but exceed the highest standards of excellence.",
+      "highlights": {
+        "leadership": {
+          "title": "Visionary Leadership",
+          "description": "Pioneering the future of creative excellence"
+        },
+        "partnership": {
+          "title": "Strategic Partnership",
+          "description": "Building lasting relationships through exceptional service"
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Exhibition Projects",
+      "subtitle": "Portfolio",
+      "description": "Discover our latest exhibition projects that showcase our expertise in creating stunning, functional, and memorable exhibition experiences for leading brands.",
+      "items": {
+        "1": {
+          "alt": "ARKAN Exhibition Project - Modern Booth Design",
+          "title": "ARKAN Exhibition Project",
+          "caption": "Contemporary Exhibition Booth",
+          "description": "Sleek and modern exhibition booth design showcasing ARKAN's expertise in creating cutting-edge exhibition spaces. This project demonstrates our commitment to innovative design solutions that combine aesthetic excellence with functional efficiency."
+        },
+        "2": {
+          "alt": "ARKAN Exhibition Project - Professional Showcase",
+          "title": "ARKAN Exhibition Project",
+          "caption": "Professional Brand Showcase",
+          "description": "Exceptional exhibition booth design highlighting ARKAN's mastery in creating sophisticated exhibition environments. This project showcases our ability to transform brand concepts into compelling visual narratives that resonate with audiences."
+        },
+        "3": {
+          "alt": "ARKAN Exhibition Project - Innovative Space",
+          "title": "ARKAN Exhibition Project",
+          "caption": "Innovative Exhibition Space",
+          "description": "Cutting-edge exhibition design showcasing ARKAN's forward-thinking approach to creating immersive brand experiences. This project highlights our ability to blend technology with design for memorable exhibition environments."
+        },
+        "4": {
+          "alt": "ARKAN Exhibition Project - Elegant Presentation",
+          "title": "ARKAN Exhibition Project",
+          "caption": "Elegant Exhibition Presentation",
+          "description": "Sophisticated exhibition booth design demonstrating ARKAN's mastery in creating refined and elegant presentation spaces. This project showcases our attention to detail and commitment to premium exhibition solutions."
+        },
+        "5": {
+          "alt": "ARKAN Exhibition Project - Dynamic Environment",
+          "title": "ARKAN Exhibition Project",
+          "caption": "Dynamic Exhibition Environment",
+          "description": "Vibrant exhibition space design showcasing ARKAN's ability to create dynamic and engaging environments. This project demonstrates our expertise in combining visual appeal with functional design to capture attention."
+        },
+        "6": {
+          "alt": "ARKAN Exhibition Project - Professional Setup",
+          "title": "ARKAN Exhibition Project",
+          "caption": "Professional Exhibition Setup",
+          "description": "Professional-grade exhibition setup showcasing ARKAN's commitment to delivering flawless execution and attention to detail. This project demonstrates our comprehensive approach to exhibition production."
+        },
+        "7": {
+          "alt": "ARKAN Exhibition Project - Alternative View",
+          "title": "ARKAN Exhibition Project",
+          "caption": "Alternative Exhibition View",
+          "description": "Alternative perspective of our professional exhibition setup, highlighting different angles and design elements. This showcases ARKAN's thorough approach to exhibition design from every viewpoint."
+        },
+        "8": {
+          "alt": "ARKAN Exhibition Project - Latest Innovation",
+          "title": "ARKAN Exhibition Project",
+          "caption": "Latest Exhibition Innovation",
+          "description": "State-of-the-art exhibition design representing ARKAN's latest innovations in exhibition technology and design. This project showcases our continuous evolution and commitment to staying at the forefront of trends."
+        },
+        "9": {
+          "alt": "ARKAN Exhibition Project - Comprehensive Solution",
+          "title": "ARKAN Exhibition Project",
+          "caption": "Comprehensive Exhibition Solution",
+          "description": "Complete exhibition solution demonstrating ARKAN's comprehensive approach to exhibition design and production. This project showcases our ability to deliver end-to-end exhibition services with exceptional results."
+        }
+      },
+      "cta": {
+        "title": "Ready to Create Your Next Exhibition?",
+        "description": "Let us bring your vision to life with our award-winning exhibition design and production services.",
+        "button1": "Start Your Project",
+        "button2": "View All Projects"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "ABOUT ARKAN",
+      "titleLine1": "Production",
+      "titleLine2": "Excellence",
+      "subtitle": "Precision fabrication, premium finishing, and reliable delivery"
+    },
+    "capabilities": {
+      "title": "Production Capabilities",
+      "description1": "Arkan Al-Tafawuq Production House delivers end-to-end fabrication and print solutions—covering acrylic, wood, metal, and composite works with a fully equipped workshop. Our capabilities include CNC routing, laser cutting, bending, welding, painting, and meticulous assembly to achieve brand-perfect results.",
+      "description2": "We produce signage, wayfinding systems, retail fixtures, display stands, exhibition booths, 3D props, and custom installations—engineered for durability, clean finishes, and fast installation on site."
+    },
+    "printServices": {
+      "title": "Print & Event Services",
+      "description1": "Our print division handles large-format, UV, and eco-solvent printing for backdrops, billboards, wall wraps, vehicle branding, and packaging mockups. We also provide LED screen setups, truss & staging, and turnkey event production with on-site installation and dismantling.",
+      "description2": "From technical drawings to final handover, we manage timelines, quality control, and safety to keep your activation or fit-out on schedule—every time."
+    },
+    "mission": {
+      "badge": "MISSION",
+      "title": "Our Commitment",
+      "description1": "To craft high-quality production deliverables—fabrication, printing, signage, booths, and event setups—through precise engineering, robust materials, and disciplined project management.",
+      "description2": "We align with brand guidelines, optimize costs and lead times, and maintain rigorous QC at each stage—from cutting and finishing to packaging and installation—ensuring flawless results on site."
+    },
+    "vision": {
+      "badge": "VISION",
+      "title": "Our Future",
+      "description1": "To be the region's most trusted production partner for brands and agencies—known for reliability, innovation, and premium finishing.",
+      "description2": "We invest in advanced machinery, materials, and talent to expand capacity, elevate standards, and deliver sustainable, scalable production at speed."
+    },
+    "values": {
+      "subtitle": "OUR VALUES",
+      "title": "Excellence Through Values",
+      "description": "The principles that guide our commitment to delivering exceptional production solutions and building lasting partnerships.",
+      "items": {
+        "collaboration": {
+          "label": "CLIENT COLLABORATION",
+          "description": "Partnership-driven approach"
+        },
+        "innovation": {
+          "label": "INNOVATION & R&D",
+          "description": "Cutting-edge solutions"
+        },
+        "ownership": {
+          "label": "END-TO-END OWNERSHIP",
+          "description": "Complete project responsibility"
+        },
+        "improvement": {
+          "label": "CONTINUOUS IMPROVEMENT",
+          "description": "Always evolving excellence"
+        },
+        "quality": {
+          "label": "QUALITY & ON-TIME DELIVERY",
+          "description": "Uncompromising standards"
+        },
+        "sustainable": {
+          "label": "SUSTAINABLE PRACTICES",
+          "description": "Responsible production methods"
+        }
+      }
+    }
+  },
+  "production": {
+    "hero": {
+      "badge": "PRODUCTION SERVICES",
+      "titleLine1": "Excellence in",
+      "titleLine2": "Production",
+      "subtitle": "Exhibition & Event Setup, Outdoor & Indoor Branding",
+      "description": "We specialize in comprehensive production services that bring your vision to life through precision fabrication, premium finishing, and reliable delivery across all project types.",
+      "cta": "Download Portfolio"
+    },
+    "eventSetup": {
+      "subtitle": "Exhibition & Event Setup",
+      "title": "Comprehensive Event Solutions",
+      "description": "We specialize in providing comprehensive exhibition and event setup services that create impactful and immersive experiences for your audience.",
+      "content": "Whether it's a trade show or a corporate event, we ensure that every detail is meticulously managed to create an impactful and immersive experience that exceeds expectations."
+    },
+    "gallery": {
+      "items": {
+        "1": "Premium exhibition stand design and fabrication",
+        "2": "Interactive digital display installations",
+        "3": "Large-scale event production and setup",
+        "4": "Custom-built modular exhibition structures",
+        "5": "Professional corporate event staging",
+        "6": "Brand activation and experiential marketing setups",
+        "7": "High-end trade show booth installations",
+        "8": "Integrated lighting and audiovisual solutions",
+        "9": "Complete event production management"
+      }
+    },
+    "branding": {
+      "subtitle": "OUTDOOR & INDOOR BRANDING",
+      "title": "Brand Visibility Solutions",
+      "professional": {
+        "title": "Professional Branding",
+        "description": "Our expert branding solutions help businesses establish a compelling and professional presence through high-quality indoor and outdoor branding elements."
+      },
+      "custom": {
+        "title": "Custom Solutions",
+        "description": "We design and produce customized signage, displays, banners, and promotional materials that enhance brand recognition and ensure visibility in any setting."
+      }
+    },
+    "portfolio": {
+      "subtitle": "Our Work",
+      "title": "Portfolio Showcase",
+      "description": "Explore our recent projects and see the quality and craftsmanship that defines our production excellence."
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "GET IN TOUCH",
+      "titleLine1": "Let's Create",
+      "titleLine2": "Something Amazing",
+      "subtitle": "Ready to bring your vision to life? We'd love to hear from you",
+      "description": "Whether you have a project in mind, need consultation, or want to discuss how we can help elevate your brand, we're here to listen and provide the expertise you need."
+    },
+    "info": {
+      "subtitle": "Contact Information",
+      "title": "How to Reach Us",
+      "description": "Multiple ways to connect with our team and start your next project.",
+      "email": {
+        "title": "Email",
+        "description": "Send us an email anytime"
+      },
+      "phone": {
+        "title": "Phone",
+        "description": "Call us during business hours"
+      },
+      "location": {
+        "title": "Location",
+        "value": "Our Office Location",
+        "description": "Visit us at our location"
+      }
+    },
+    "form": {
+      "subtitle": "Send us a Message",
+      "title": "Get Started Today",
+      "description": "Fill out the form below and we'll get back to you within 24 hours.",
+      "fields": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "phone": "Phone Number",
+        "message": "Your Message"
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Thank you! Your message has been sent successfully.",
+      "error": "Something went wrong. Please try again."
+    },
+    "additional": {
+      "responseTime": {
+        "title": "Response Time",
+        "description": "We typically respond to all inquiries within 24 hours during business days."
+      },
+      "consultation": {
+        "title": "Consultation",
+        "description": "Free initial consultation for all new projects and potential partnerships."
+      },
+      "support": {
+        "title": "Support",
+        "description": "Ongoing support and maintenance for all our completed projects."
+      }
+    }
+  },
+  "footer": {
+    "description": "Delivering exceptional design solutions and precision production services. Elevating brands through innovative creativity and technical excellence.",
+    "badges": {
+      "experience": "3+ Years Experience",
+      "projects": "500+ Projects",
+      "satisfaction": "98% Satisfaction"
+    },
+    "services": {
+      "title": "Our Services",
+      "production": "Production Services",
+      "design": "Design Solutions",
+      "consultation": "Consultation",
+      "list": {
+        "design": "Design Solutions",
+        "production": "Production Services",
+        "exhibition": "Exhibition Design",
+        "consultation": "Consultation"
+      }
+    },
+    "contact": {
+      "title": "Contact Information",
+      "businessHours": "Business Hours",
+      "businessHoursTime": "Sunday - Thursday: 8:00 AM - 6:00 PM"
+    },
+    "bottom": {
+      "copyright": "All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookie": "Cookie Policy",
+      "location": "Saudi Arabia"
+    }
+  },
+  "testimonials": {
+    "subtitle": "Client Success Stories",
+    "title": "What Our Clients Say",
+    "description": "Don't just take our word for it. Here's what industry leaders say about working with ARKAN AL-TAFAWUQ.",
+    "stats": {
+      "satisfaction": "Client Satisfaction",
+      "clients": "Happy Clients",
+      "experience": "Years Experience",
+      "repeat": "Repeat Business"
+    },
+    "items": {
+      "1": {
+        "name": "Ahmed Al-Rashid",
+        "company": "CEO, Al-Rashid Group",
+        "content": "ARKAN AL-TAFAWUQ transformed our brand completely. Their design work increased our customer engagement by 300% and their production excellence generated exceptional results. Simply outstanding!"
+      },
+      "2": {
+        "name": "Sarah Al-Zahra",
+        "company": "Marketing Director, TechCorp Saudi",
+        "content": "The production quality and attention to detail is unmatched. They delivered our exhibition booth on time and it became the talk of the event. Our sales increased by 200% during the exhibition."
+      },
+      "3": {
+        "name": "Mohammed Al-Mansouri",
+        "company": "Founder, Mansouri Enterprises",
+        "content": "Working with ARKAN AL-TAFAWUQ was a game-changer for our business. Their strategic approach and creative solutions helped us expand into 5 new markets within 12 months."
+      },
+      "4": {
+        "name": "Fatima Al-Sabah",
+        "company": "Brand Manager, Luxury Retail Co.",
+        "content": "Their exhibition design and production strategies are phenomenal. We saw exceptional results from their innovative brand activation solutions. They truly understand modern brand experiences."
+      },
+      "5": {
+        "name": "Khalid Al-Harbi",
+        "company": "Operations Director, Industrial Solutions Ltd",
+        "content": "The quality of their production work exceeds all expectations. They handled our complex project with precision and delivered ahead of schedule. Highly recommended for any business."
+      }
+    }
+  },
+  "gallery": {
+    "subtitle": "Portfolio",
+    "description": "Discover our latest exhibition projects that showcase our expertise in creating stunning, functional, and memorable exhibition experiences for leading brands.",
+    "noImages": "No images available at the moment",
+    "fallbackImage": "Gallery image {{index}}",
+    "fallbackImageAlt": "Gallery image",
+    "fallbackProject": "Project {{index}}",
+    "fallbackTitle": "Project Details",
+    "fallbackDescription": "A showcase of our professional work and creative excellence."
+  },
+  "newsletter": {
+    "subtitle": "Stay Updated",
+    "title": "Join Our Newsletter",
+    "description": "Get the latest updates on our projects, industry insights, and exclusive offers delivered to your inbox.",
+    "placeholder": "Enter your email address",
+    "subscribe": "Subscribe",
+    "success": "Successfully subscribed! Thank you for joining us.",
+    "disclaimer": "We respect your privacy. Unsubscribe at any time."
+  },
+  "common": {
+    "language": {
+      "en": "English",
+      "ar": "العربية"
+    }
+  }
+}
+

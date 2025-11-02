@@ -1,0 +1,106 @@
+/* ===========================
+   Back to Top Button - Professional Styles
+   =========================== */
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: rgba(211, 170, 139, 0.1);
+  border: 1px solid rgba(211, 170, 139, 0.3);
+  border-radius: 50%;
+  color: #d3aa8b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: rgba(211, 170, 139, 0.2);
+  border-color: rgba(211, 170, 139, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(211, 170, 139, 0.2);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top:hover svg {
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .back-to-top svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .back-to-top svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top {
+    animation: none;
+  }
+  
+  .back-to-top:hover {
+    transform: none;
+  }
+  
+  .back-to-top:hover svg {
+    transform: none;
+  }
+}
+
+/* Focus states for keyboard navigation */
+.back-to-top:focus {
+  outline: 2px solid rgba(211, 170, 139, 0.5);
+  outline-offset: 2px;
+}

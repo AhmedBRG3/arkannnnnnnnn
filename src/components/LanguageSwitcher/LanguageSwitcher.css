@@ -1,0 +1,50 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 24px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid rgba(211, 170, 139, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.lang-btn:hover {
+  background: rgba(211, 170, 139, 0.1);
+  border-color: rgba(211, 170, 139, 0.5);
+  color: #d3aa8b;
+}
+
+.lang-btn.active {
+  background: rgba(211, 170, 139, 0.2);
+  border-color: #d3aa8b;
+  color: #d3aa8b;
+}
+
+/* RTL support */
+[dir="rtl"] .language-switcher {
+  margin-left: 0;
+  margin-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  [dir="rtl"] .language-switcher {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+

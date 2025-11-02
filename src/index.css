@@ -1,0 +1,579 @@
+/* ==========================================================
+   Global Styles - Arkan Al Tafawuq Refactor
+   Dark theme with cinematic typography and smooth animations
+   ========================================================== */
+
+/* ---------- CSS Variables ---------- */
+:root {
+  /* Colors - Dark theme with high contrast */
+  --brand-deep-green: #0E3E35; /* new site background */
+  --text-on-brand: #FFFFFF;    /* keep readable text */
+  --bg: #0b0b0b;
+  --fg: #f5f5f5;
+  --muted: #bfbfbf;
+  --accent: #d3aa8b;
+  --accent-light: #e6c4a8;
+  --surface: #1a1a1a;
+  --surface-2: #2a2a2a;
+
+  /* Light beige values section tokens */
+  --beige:#E4DFD9;
+  --ink:#0E0E0E;                /* headings */
+  --body:#3E4442;               /* paragraph */
+  --brand:#0E3E35;              /* Arkan green */
+  --gold:#EED9B7;               /* soft tag bg */
+  --card:#FFFFFF;               /* light card */
+  --border:rgba(14,14,14,.08);
+  --shadow:0 12px 30px rgba(0,0,0,.08);
+  
+  /* Spacing & Layout */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: clamp(72px, 8vw, 140px);
+  --space-2xl: clamp(120px, 12vw, 200px);
+  
+  /* Typography */
+  --font-display: 'DMSerifText-Regular', serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  
+  /* Animation */
+  --ease: cubic-bezier(0.2, 0.6, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --duration-fast: 0.2s;
+  --duration-normal: 0.4s;
+  --duration-slow: 0.6s;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Font Loading ---------- */
+@font-face {
+  font-family: "DMSerifText-Regular";
+  src: url("./fonts/DMSerifText-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSerifText-Italic";
+  src: url("./fonts/DMSerifText-Italic.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* ---------- Reset & Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  border: none !important;
+  outline: none !important;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--fg);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  border: none !important;
+  outline: none !important;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Ensure app-wide background and text - original */
+html, body, #root {
+  background: #000000;
+  color: var(--fg);
+}
+
+/* ---------- Typography Scale ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(var(--text-4xl), 5vw, var(--text-8xl));
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: clamp(var(--text-3xl), 4vw, var(--text-6xl));
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl));
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: clamp(var(--text-xl), 2.5vw, var(--text-3xl));
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: clamp(var(--text-lg), 2vw, var(--text-2xl));
+  line-height: 1.3;
+}
+
+h6 {
+  font-size: clamp(var(--text-base), 1.5vw, var(--text-xl));
+  line-height: 1.4;
+}
+
+p {
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+/* ---------- Links & Buttons ---------- */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease);
+}
+
+a:hover {
+  color: var(--accent-light);
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ---------- Images & Media ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  loading: lazy;
+  decoding: async;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Performance optimizations */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* ---------- Utility Classes ---------- */
+.container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+/* (utilities removed to restore original site) */
+
+.section--large {
+  padding: var(--space-2xl) 0;
+}
+
+/* ---------- Reveal Animations ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--duration-slow) var(--ease-out), 
+              transform var(--duration-slow) var(--ease-out);
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Magnetic Hover ---------- */
+.magnetic {
+  display: inline-block;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.magnetic:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Video Wrapper ---------- */
+.videoWrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.videoWrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+/* ---------- Custom Cursor ---------- */
+#cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform var(--duration-fast) var(--ease);
+  transform: translate(-50%, -50%);
+}
+
+#cursor.hover {
+  transform: translate(-50%, -50%) scale(2);
+}
+
+/* ---------- Loader ---------- */
+#app-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity var(--duration-slow) var(--ease-out);
+}
+
+#app-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-track {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background: var(--surface);
+  border-radius: 1px;
+  margin-bottom: var(--space-md);
+}
+
+.loader-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  border-radius: 1px;
+  transition: width var(--duration-normal) var(--ease);
+}
+
+.loader-pct {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Accessibility & Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .magnetic:hover {
+    transform: none;
+  }
+}
+
+/* ---------- Focus States ---------- */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Keyboard navigation styles */
+.keyboard-navigation *:focus {
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 2px !important;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 10000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-light);
+}
+
+/* ---------- RTL (Right-to-Left) Support ---------- */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Flip flexbox directions */
+[dir="rtl"] .container,
+[dir="rtl"] .section,
+[dir="rtl"] .grid {
+  direction: rtl;
+}
+
+/* Adjust padding and margins for RTL */
+[dir="rtl"] .section--light::before {
+  left: auto;
+  right: 0;
+}
+
+/* Center text in RTL as well */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  text-align: center;
+}
+
+[dir="rtl"] p {
+  text-align: center;
+}
+
+/* Grid and flex adjustments */
+[dir="rtl"] .gallery-grid,
+[dir="rtl"] .services-grid,
+[dir="rtl"] .content-grid {
+  direction: rtl;
+}
+
+/* Button and link positioning */
+[dir="rtl"] .hero__cta,
+[dir="rtl"] .cta-buttons {
+  flex-direction: row-reverse;
+}
+
+/* Navigation adjustments */
+[dir="rtl"] .navbar-menu {
+  flex-direction: row-reverse;
+}
+
+/* Icon flips for directional elements */
+[dir="rtl"] .lightbox-nav.lightbox-prev svg,
+[dir="rtl"] .lightbox-nav.lightbox-next svg {
+  transform: scaleX(-1);
+}
+
+/* Skip link position */
+[dir="rtl"] .skip-link {
+  left: auto;
+  right: 6px;
+}
+
+[dir="rtl"] .skip-link:focus {
+  right: 6px;
+}
+
+/* Contact info card adjustments */
+[dir="rtl"] .contact-item {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .contact-info-icon {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+/* Form inputs - keep left-aligned for usability, override in RTL */
+[dir="rtl"] input,
+[dir="rtl"] textarea {
+  text-align: right !important;
+  direction: rtl;
+}
+
+[dir="rtl"] input::placeholder,
+[dir="rtl"] textarea::placeholder {
+  text-align: right !important;
+}
+
+/* Ensure proper font rendering for Arabic */
+[dir="rtl"],
+[lang="ar"] {
+  font-family: 'Segoe UI', 'Arial', 'Helvetica', 'Tahoma', 'Arabic UI Text', sans-serif;
+}
+
+/* Center all text content globally */
+.section__description,
+.hero__description,
+.section__subtitle,
+.section__title,
+.hero__title,
+.hero__subtitle,
+.hero__badge,
+h1, h2, h3, h4, h5, h6,
+p, span, div, li, td, th,
+label, .caption, .description,
+.card-title, .card-description,
+.service-card h3, .service-card p,
+.value-card, .value-description,
+.testimonial-text, .testimonial-content,
+blockquote, .quote, .subtitle {
+  text-align: center !important;
+}
+
+/* Keep form inputs functional (left-aligned for readability) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  text-align: left !important;
+}
+
+[dir="rtl"] input[type="text"],
+[dir="rtl"] input[type="email"],
+[dir="rtl"] input[type="tel"],
+[dir="rtl"] input[type="password"],
+[dir="rtl"] textarea {
+  text-align: right !important;
+}
+
+[dir="rtl"] .section__description,
+[dir="rtl"] .hero__description {
+  text-align: center !important;
+}
+
+/* Arabic hero title spacing - prevent text from sticking together */
+[dir="rtl"] .hero__title,
+[dir="rtl"] .hero__title-line {
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.15em !important;
+}
+
+[dir="rtl"] .hero__title-accent {
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.15em !important;
+}
+
+/* Add gap between Arabic title lines - especially between first line ending with "إلى" and second line starting with "رائد السوق" */
+[dir="rtl"] .hero__title-line:not(.hero__title-accent) {
+  margin-bottom: 0.3em !important;
+  padding-left: 0.3em !important;
+}
+
+[dir="rtl"] .hero__title-line.hero__title-accent {
+  margin-top: 0.3em !important;
+  padding-right: 0.5em !important;
+}
